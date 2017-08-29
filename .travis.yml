@@ -1,1 +1,12 @@
 language: java
+deploy:
+  provider: releases
+  api_key:
+    secure: UVKwAlXYBST77XlRcbH57adPcb6U/rqUhe6YeWiaQA5lAcqzf7ZYA929wLFoZFYMNS5CoIDaLxLrn09q7DR5WsaHmIZuPLcnKf6EmkUl95HHsPJ8uq0Tbdlq1uugy1BVGGaRTfU24Tw42vLnFolrfWxSvCyyekkDiUIMdeghpcTtrWBsOF4hMazRU7midfi8u41gl+ruj2buWIFWPkoM+YUaq658RT6aCRplY3u4I8sjgBf+FnVKvJHXV15G5f3b2O6hVU0WDknUMW7hxPwwgqSWHxyDhxH/1PVgqUsx8RViXEpDbAmiz7NFScavcY7Bj3YRf1CmIW2qbu8nosqGqppRlIxOdYygXdnrqERHvQ+wULiOWIADpfxjh+D0Un82X5FGf6C/vwF8uL9tFrkqq8cfIib9PXG5XFUUBoTOkZaLiJTMI6ZNjNsMJtB/pvXzcLpTEznMWsdhHeVFkq/enD7pw25E5J797Z/5oEBZQ9Ka17Oz/0JQv1rgKKsk9ykIaTbMDx/czZL7msv0MJk13OB8yZP3AJSHuf+Wgmnx0xOn0UF7EKYa3eHigDrzZ+LgKKj6M7xnJskLWxBVUa+sDOl0mDqjXdB5BxOiQCmvTfWO/OkrUQWnxYZXy59rUeWQ9YZ0agQyRZ34xJiLdOsLz/nPC1nGYVRIlysQ42dlsms=
+  file_glob: true
+  file: build/distributions/*
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: xebialabs-community/xld-overthere-smb-converter-plugin
