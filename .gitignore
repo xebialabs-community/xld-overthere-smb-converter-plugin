@@ -2,3 +2,4 @@
 .idea
 build
 xld-overthere-smb-converter-plugin.iml
+supervisord.*
